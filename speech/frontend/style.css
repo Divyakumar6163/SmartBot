@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-blue: #0A1FB8;
+    --accent-green: #4ED2A3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, var(--primary-blue), #050821);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* BRAND */
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-logo { height: 90px; }
+.brand-logo-right { height: 65px; }
+
+.brand-x {
+    font-size: 28px;
+    color: var(--accent-green);
+}
+
+.brand-title {
+    font-size: 72px;
+    margin-top: 6px;
+}
+
+.subtitle {
+    color: var(--accent-green);
+    margin-top: 8px;
+}
+
+/* VOICE UI */
+.voice-ui {
+    margin-top: 40px;
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.voice-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-green), var(--primary-blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(78,210,163,0.9);
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
+}
+
+.voice-circle.hidden {
+    opacity: 0;
+    transform: scale(0.7);
+    z-index: 1;
+}
+
+.voice-circle img {
+    width: 52px;
+    height: 52px;
+    filter: invert(1);
+    pointer-events: none;
+}
+
+/* Animations */
+#ear { animation: pulse 1.5s infinite; }
+#eq { animation: pulse-fast 0.8s infinite; }
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(78,210,163,0.6); }
+    50% { box-shadow: 0 0 60px rgba(78,210,163,1); }
+    100% { box-shadow: 0 0 20px rgba(78,210,163,0.6); }
+}
+
+@keyframes pulse-fast {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+#status {
+    margin-top: 14px;
+}
+
+#result {
+    margin-top: 20px;
+}

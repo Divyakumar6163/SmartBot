@@ -1,0 +1,17 @@
+﻿venv/
+__pycache__/
+*.pyc
+.env
+
+# OS junk
+.DS_Store
+
+# audio temp
+*.wav
+*.webm
+*_clean.wav
+
+# data / csv / db
+*.csv
+*.sql
+*.dump

@@ -1,0 +1,13 @@
+# UI
+streamlit
+
+# OpenAI API (intent classification)
+openai
+
+# PostgreSQL database driver (Windows safe)
+psycopg2-binary
+
+# Optional but recommended (dates, robustness)
+python-dateutil
+sqlalchemy
+openpyxl

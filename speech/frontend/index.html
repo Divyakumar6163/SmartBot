@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BRAND -->
+    <div class="brand-container">
+        <div class="brand-logos">
+            <img src="logonew.png" class="brand-logo">
+            <span class="brand-x">×</span>
+            <img src="aws-white.png" class="brand-logo-right">
+        </div>
+        <h1 class="brand-title">SmartBot</h1>
+    </div>
+
+    <p class="subtitle">Tell me your query. I’m here to help you.</p>
+
+    <!-- VOICE UI -->
+    <div class="voice-ui">
+        <div id="mic" class="voice-circle">
+            <img src="audio.png">
+        </div>
+
+        <div id="ear" class="voice-circle hidden">
+            <img src="ear.png">
+        </div>
+
+        <div id="eq" class="voice-circle hidden">
+            <img src="equalizer.png">
+        </div>
+    </div>
+
+    <p id="status">Tap to speak</p>
+    <div id="result"></div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
